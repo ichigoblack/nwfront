@@ -1,0 +1,85 @@
+
+      <!--<c-col md="12" xs="12" *ngIf="displayedRows.length>0">
+        <ngx-datatable
+          #table
+          class="material table"
+          style="width: 100%" 
+          [rows]="displayedRows" 
+          [columnMode]="ColumnMode.force"
+          [headerHeight]="50" 
+          [footerHeight]="50" 
+          [rowHeight]="50" [limit]="5" 
+          [selected]="selected"
+          [selectionType]="SelectionType.checkbox" 
+          [selectAllRowsOnPage]="false" 
+          [scrollbarV]="false" 
+          [scrollbarH]="true" 
+        >
+          <ngx-datatable-column
+            *ngFor="let col of encabezado" [prop]="col.displayName"
+          >
+            <ng-template 
+              ngx-datatable-header-template
+            >
+              {{ col.displayName}}
+            </ng-template>
+              <ng-template ngx-datatable-cell-template let-value="value" let-row="row">
+                <span>
+                  <ng-container *ngIf="col.dataType === 'text' ">
+                    {{ value }}
+                  </ng-container>
+                </span>
+              </ng-template>
+          </ngx-datatable-column> 
+          <ngx-datatable-column>
+            <ng-template 
+              ngx-datatable-header-template
+            >
+              Estado
+            </ng-template>
+              <ng-template ngx-datatable-cell-template let-value="value">
+                <span>
+                  rojo
+                </span>
+              </ng-template>
+          </ngx-datatable-column> 
+          <ngx-datatable-column 
+            [width]="80" 
+            [resizeable]="true" 
+            [sortable]="true" 
+            [draggable]="true" 
+            [canAutoResize]="false"
+            [frozenLeft]="false" 
+            [checkboxable]="true" 
+            [headerCheckboxable]="true" 
+          >
+          </ngx-datatable-column>
+          <ngx-datatable-column 
+            [width]="20" 
+            [resizeable]="true" 
+            [sortable]="true" 
+            [draggable]="true" 
+            [canAutoResize]="false"
+            [frozenLeft]="false"
+          >
+            <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>
+              <a href="javascript:void(0)" [class.datatable-icon-right]="!expanded" 
+                [class.datatable-icon-down]="expanded"
+                  title="Expand/Collapse Row" >
+              </a>
+              </ng-template>
+          </ngx-datatable-column> 
+          <ngx-datatable-column name="Action" widht="600">    
+            <ng-template let-row="row" let-expanded="expanded" ngx-datatable-cell-template>    
+                <div class="">   
+                  <button cButton color="" style="background-color: green;margin-right: 2px;">
+                    <svg cIcon name="cilSave" size="xl" title="Paper Plane Icon"></svg>
+                  </button> 
+                  <button cButton color="" style="background-color: green;">
+                    <svg cIcon name="cilDelete" size="xl" title="Paper Plane Icon"></svg>
+                  </button>    
+                </div>    
+            </ng-template>    
+        </ngx-datatable-column>
+        </ngx-datatable>
+      </c-col>-->
